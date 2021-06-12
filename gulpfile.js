@@ -7,12 +7,12 @@ const uglify = require("gulp-uglify-es").default; //
 const autoprefixer = require("gulp-autoprefixer");
 const imagemin = require("gulp-imagemin"); // отпимизация img
 const del = require("del"); // удаление dist-папки
-// const ghpages = require('gh-pages'); // gh-pages for dist folder
+const ghpages = require('gh-pages'); // gh-pages for dist folder
 
-// ghpages.publish('dist', {
-//     repo: 'https://github.com/Fpsska/LuckyGroup-Task.git', //npm run deploy
-//     message: 'Auto-generated commit'
-// });
+ghpages.publish('dist', {
+    repo: 'https://github.com/Fpsska/LuckyGroup-Task.git', //npm run deploy
+    message: 'Auto-generated commit'
+});
 
 
 function cleanDist() {
@@ -51,7 +51,7 @@ function styles() {       /*КОМПИЛЯЦИЯ scss -> style.min.css*/
         "node_modules/normalize.css/normalize.css",
         "app/scss/style.scss"
     ]) 
-        .pipe(scss({ outputStyle: "compressed" })) // минификация
+        .pipe(scss({ outputStyle: "expanded" })) // минификация
         .pipe(concat("style.min.css")) // конкатенация + единое название  
         .pipe(autoprefixer({
             overrideBrowserslist: ["last 10 version"],
