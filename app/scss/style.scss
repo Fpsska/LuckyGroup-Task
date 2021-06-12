@@ -11,20 +11,32 @@
     &__section_1 {
         background-color: $primary;
         background: linear-gradient(185deg, #428a60 0%, #2d8552 100%);
-
-        display: grid;
-        grid-template-columns: 1fr;
         position: relative;
-        justify-items: center;
-        align-items: flex-end;
-        padding-bottom: 2em;
-
         overflow: hidden;
         &::before {
             content: url(../img/Group.png);
             position: absolute;
-            top: -14%;
-            left: 3%;
+            top: -4rem;
+            left: 1rem;
+            z-index: 1;
+        }
+        &::after {
+            content: url(../img/product.png);
+            position: absolute;
+            top: 10.5rem;
+            left: 2.5rem;
+            z-index: 1;
+        }
+    }
+    &__section_3 {
+        display: none;
+        position: relative;
+        &::before {
+            content: url(../img/lock.svg);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
     }
     &__text {
@@ -33,22 +45,24 @@
         color: $secondary;
         position: absolute;
         transition: 0.3s linear;
+        z-index: 2;
         &:hover {
             color: #29794a;
         }
     }
-    &__img {
-        z-index: 1;
-    }
     &__text-top {
         left: 2rem;
-        top: 8%;
+        top: 2rem;
     }
     &__text-btm {
         left: 2rem;
-        top: 90%;
+        top: 23rem;
         text-transform: uppercase;
         z-index: 1;
+    }
+    &__secure {
+        font-size: 14px;
+        @extend %monts-bold;
     }
 }
 
@@ -79,18 +93,11 @@
         text-align: center;
     }
     &__button {
-        font-size: 14px;
-        @extend %monts-semi;
         background-color: $primary;
-        color: $secondary;
-        padding: 0.9em;
-        border-radius: 0.3em;
-        border: 1px solid $primary;
         display: block;
-        width: 100%;
         position: relative;
-        transition: 0.3s linear;
-        &:hover {
+        border-radius: 0.3em;
+        &:hover .btn--form {
             color: $primary;
             background-color: $secondary;
             border: 1px solid #000;
@@ -98,9 +105,20 @@
         &::before {
             content: url(../img/arrow_right.svg);
             position: absolute;
-            top: 35%;
-            left: 65%;
+            top: 0.75rem;
+            left: 10rem;
         }
+    }
+    .btn--form {
+        font-size: 14px;
+        @extend %monts-semi;
+        color: $secondary;
+        background-color: transparent;
+        border: 1px solid $primary;
+        padding: 0.9em;
+        width: 100%;
+        transition: 0.3s linear;
+        border-radius: 0.3em;
     }
 }
 
@@ -127,8 +145,7 @@ input {
     max-width: 185px;
 }
 
-
-// .input__region {                                      // section 
+// .input__region {                                      // section
 //     @extend %monts-semi;
 //     font-size: 14px;
 //     border: 1px solid #e4e4e4 !important;
@@ -155,17 +172,16 @@ input {
     &::before {
         content: url(../img/arrow_down.svg);
         position: absolute;
-        top: 25%;
-        left: 75%;
+        top: 0.65rem;
+        left: 4.35rem;
     }
     &::after {
         content: url(../img/flag.svg);
         position: absolute;
-        top: 25%;
-        left: 40%;
+        top: 50%;
+        left: 55%;
+        transform: translate(-50%, -50%);
     }
 }
-
-
 
 @import "media";
