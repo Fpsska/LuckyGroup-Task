@@ -127,8 +127,9 @@ input {
     max-width: 115px;
     width: 100%;
     position: relative;
-    display: flex;
+    display: grid;
     align-items: center;
+    margin: 0 0 0 auto;
     &::before {
         content: url(../img/arrow_down.svg);
         position: absolute;
