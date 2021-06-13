@@ -51,27 +51,9 @@
 //     }
 // }
 
-// (min-height: 600px) and (max-height: 768px)
-@media (min-height: 420px) and (max-height: 768px) {
-    .card {
-        height: 100vh;
-        min-height: auto;
-    }
-    .card__section_1 {
-        min-height: 250px;
-        padding: 3em 1em 0 1em;
-    }
-    .card__text-top {
-        top: 2.7rem;
-    }
-    .form__title {
-        padding: 0.75em 0;
-        max-width: 100%;
-    }
-    .form__container {
-        grid-row-gap: 1.5em;
-    }
-}
+// @media (min-height: 600px) and (max-height: 768px) {
+
+// }
 
 @media (min-height: 280px) and (max-height: 359px) {
     .form__title {
@@ -223,6 +205,32 @@
         &::after {
             left: 3rem;
         }
+    }
+}
+
+@media (min-height: 420px) and (max-height: 768px) {
+    .card {
+        height: 100vh;
+        min-height: auto;
+    }
+    .card__section_1 {
+        min-height: 180px;
+        padding: 1em 1em 0 1em;
+        &::after {
+            content: url(../img/product_mobileLD.png) !important;
+        }
+    }
+    .card__text-top {
+        top: 2.7rem;
+    }
+    .form__title {
+        padding: 0.75em 0;
+        max-width: 100%;
+        font-size: 20px;
+    }
+    .form__container {
+        grid-row-gap: 0.65em;
+        padding: 0.5em 0;
     }
 }
 
