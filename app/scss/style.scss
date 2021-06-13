@@ -16,15 +16,15 @@
         &::before {
             content: url(../img/Group.png);
             position: absolute;
-            top: -4rem;
-            left: 1rem;
+            top: -15%;
+            left: 1%;
             z-index: 1;
         }
         &::after {
             content: url(../img/product.png);
             position: absolute;
-            top: 10.5rem;
-            left: 2.5rem;
+            top: 43%;
+            left: 8%;
             z-index: 1;
         }
     }
