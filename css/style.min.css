@@ -741,27 +741,6 @@ input, .input__region, .form .btn--form {
   }
 }
 
-@media (min-height: 420px) and (max-height: 768px) {
-  .card {
-    height: 100vh;
-    min-height: auto;
-  }
-  .card__section_1 {
-    min-height: 250px;
-    padding: 3em 1em 0 1em;
-  }
-  .card__text-top {
-    top: 2.7rem;
-  }
-  .form__title {
-    padding: 0.75em 0;
-    max-width: 100%;
-  }
-  .form__container {
-    grid-row-gap: 1.5em;
-  }
-}
-
 @media (min-height: 280px) and (max-height: 359px) {
   .form__title {
     max-width: 100%;
@@ -992,6 +971,32 @@ input, .input__region, .form .btn--form {
   .form__section-2 {
     -ms-grid-row: 1;
     -ms-grid-column: 3;
+  }
+}
+
+@media (min-height: 420px) and (max-height: 768px) {
+  .card {
+    height: 100vh;
+    min-height: auto;
+  }
+  .card__section_1 {
+    min-height: 180px;
+    padding: 1em 1em 0 1em;
+  }
+  .card__section_1::after {
+    content: url(../img/product_mobileLD.png) !important;
+  }
+  .card__text-top {
+    top: 2.7rem;
+  }
+  .form__title {
+    padding: 0.75em 0;
+    max-width: 100%;
+    font-size: 20px;
+  }
+  .form__container {
+    grid-row-gap: 0.65em;
+    padding: 0.5em 0;
   }
 }
 
