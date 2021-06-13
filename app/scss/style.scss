@@ -51,12 +51,12 @@
         }
     }
     &__text-top {
-        left: 2rem;
-        top: 2rem;
+        left: 5%;
+        top: 6%;
     }
     &__text-btm {
-        left: 2rem;
-        top: 23rem;
+        left: 5%;
+        top: 90%;
         text-transform: uppercase;
         z-index: 1;
     }
@@ -105,8 +105,8 @@
         &::before {
             content: url(../img/arrow_right.svg);
             position: absolute;
-            top: 0.75rem;
-            left: 10rem;
+            top: 35%;
+            left: 70%;
         }
     }
     .btn--form {

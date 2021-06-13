@@ -5,7 +5,13 @@
 }
 
 ::placeholder {
-    opacity: .4;
+    opacity: 0.4;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    font-size: 16px;
 }
 
 h1,
@@ -40,8 +46,7 @@ select {
 $primary: #428a60;
 $secondary: #ffffff;
 $gray: #f8f8f8;
-$gap: .5em;
-
+$gap: 0.5em;
 
 body {
     margin: 0;
@@ -78,7 +83,6 @@ body {
     display: grid;
     place-items: center;
 }
-
 
 input {
     font-size: 14px;
@@ -133,8 +137,8 @@ input {
     &::before {
         content: url(../img/arrow_down.svg);
         position: absolute;
-        top: 0.65rem;
-        left: 4.35rem;
+        top: 30%;
+        left: 77%;
     }
     &::after {
         content: url(../img/flag.svg);

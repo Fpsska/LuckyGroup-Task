@@ -39,201 +39,6 @@
     }
 }
 
-// @media (max-width: 1024px) and (max-height: 768px) {
-//     .card__text-top {
-//         top: 2.7rem;
-//     }
-//     .form__title {
-//         padding: 0.75em 0;
-//     }
-//     .card__section_1 {
-//         padding: 3em 1em 0 1em;
-//     }
-// }
-
-// @media (min-height: 600px) and (max-height: 768px) {
-
-// }
-
-@media (min-height: 280px) and (max-height: 359px) {
-    .form__title {
-        max-width: 100%;
-        font-size: 20px;
-        padding: 0.5em 0;
-    }
-    .form__container {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: min-content;
-        align-items: center;
-        grid-template-areas:
-            "a b"
-            "c c";
-        max-width: 100%;
-        grid-row-gap: 1em;
-        grid-column-gap: $gap;
-        justify-content: center;
-        padding: 0.5em 0 0 0;
-    }
-    .form__container-small {
-        padding: 0;
-    }
-    .form {
-        grid-template-rows: min-content 0.65fr;
-    }
-    .form__button {
-        grid-area: c;
-        &::before {
-            left: 20rem;
-            top: 0.75rem;
-        }
-    }
-    .form__section-1 {
-        grid-area: a;
-    }
-    .form__section-2 {
-        grid-area: b;
-    }
-    .card__section_1 {
-        min-height: 120px;
-        padding: 0 1em 0 1em;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        align-items: center;
-        &::after {
-            content: url(../img/product_nano.png) !important;
-            left: 50%;
-            top: 70%;
-        }
-        &::before {
-            content: url(../img/Group_mobileLD.png) !important;
-        }
-    }
-    .card__text {
-        font-size: 18px;
-        position: static;
-    }
-    .card__text-top {
-        text-align: start;
-    }
-    .card__text-btm {
-        text-align: end;
-    }
-    .card__section_2 {
-        padding: 0 0.25em;
-    }
-    .input__region {
-        &::before {
-            left: 2.5rem;
-        }
-        &::after {
-            display: none;
-            left: 2.8rem;
-        }
-    }
-}
-
-@media (min-height: 360px) and (max-height: 414px) {
-    .form__title {
-        max-width: 100%;
-        font-size: 20px;
-        padding: 0.5em 0;
-    }
-    .form__container {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: min-content;
-        align-items: center;
-        grid-template-areas:
-            "a b"
-            "c c";
-        max-width: 100%;
-        grid-row-gap: 1em;
-        grid-column-gap: $gap;
-        justify-content: center;
-        padding: 0.5em 0 0 0;
-    }
-    .form__container-small {
-        padding: 0;
-    }
-    .form {
-        grid-template-rows: min-content 0.65fr;
-    }
-    .form__button {
-        grid-area: c;
-        &::before {
-            left: 25rem;
-            top: 0.74rem;
-        }
-    }
-    .form__section-1 {
-        grid-area: a;
-    }
-    .form__section-2 {
-        grid-area: b;
-    }
-    .card__section_1 {
-        min-height: 175px;
-        padding: 0 1em 0 1em;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        align-items: center;
-        &::after {
-            content: url(../img/product_mobileLD.png) !important;
-            left: 55%;
-            top: 65%;
-        }
-        &::before {
-            content: url(../img/Group_mobileLD.png) !important;
-        }
-    }
-    .card__text {
-        font-size: 18px;
-        position: static;
-    }
-    .card__text-top {
-        text-align: start;
-    }
-    .card__text-btm {
-        text-align: end;
-    }
-    .card__section_2 {
-        padding: 0 0.25em;
-    }
-    .input__region {
-        &::before {
-            left: 4.3rem;
-        }
-        &::after {
-            left: 3rem;
-        }
-    }
-}
-
-@media (min-height: 420px) and (max-height: 768px) {
-    .card {
-        height: 100vh;
-        min-height: auto;
-    }
-    .card__section_1 {
-        min-height: 180px;
-        padding: 1em 1em 0 1em;
-        &::after {
-            content: url(../img/product_mobileLD.png) !important;
-        }
-    }
-    .card__text-top {
-        top: 2.7rem;
-    }
-    .form__title {
-        padding: 0.75em 0;
-        max-width: 100%;
-        font-size: 20px;
-    }
-    .form__container {
-        grid-row-gap: 0.65em;
-        padding: 0.5em 0;
-    }
-}
-
 @media (max-width: 460px) {
     .card {
         height: 100vh;
@@ -322,5 +127,183 @@
     }
     .form__section-2 {
         grid-row-gap: 0.25em;
+    }
+}
+
+@media (min-height: 280px) and (max-height: 359px) {
+    .form__title {
+        max-width: 100%;
+        font-size: 20px;
+        padding: 0.5em 0;
+    }
+    .form__container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: min-content;
+        align-items: center;
+        grid-template-areas:
+            "a b"
+            "c c";
+        max-width: 100%;
+        grid-row-gap: 1em;
+        grid-column-gap: $gap;
+        justify-content: center;
+        padding: 0.5em 0 0 0;
+    }
+    .form__container-small {
+        padding: 0;
+    }
+    .form {
+        grid-template-rows: min-content 0.65fr;
+    }
+    .form__button {
+        grid-area: c;
+        &::before {
+            left: 70%;
+            top: 35%;
+        }
+    }
+    .form__section-1 {
+        grid-area: a;
+    }
+    .form__section-2 {
+        grid-area: b;
+    }
+    .card__section_1 {
+        min-height: 120px;
+        padding: 0 1em 0 1em;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        &::after {
+            content: url(../img/product_nano.png) !important;
+            left: 50%;
+            top: 70%;
+        }
+        &::before {
+            content: url(../img/Group_mobileLD.png) !important;
+        }
+    }
+    .card__text {
+        font-size: 18px;
+        position: static;
+    }
+    .card__text-top {
+        text-align: start;
+    }
+    .card__text-btm {
+        text-align: end;
+    }
+    .card__section_2 {
+        padding: 0 0.25em;
+    }
+    .input__region {
+        &::before {
+            left: 70%;
+        }
+        &::after {
+            display: none;
+        }
+    }
+}
+
+@media (min-height: 360px) and (max-height: 414px) {
+    .form__title {
+        max-width: 100%;
+        font-size: 20px;
+        padding: 0.5em 0;
+    }
+    .form__container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: min-content;
+        align-items: center;
+        grid-template-areas:
+            "a b"
+            "c c";
+        max-width: 100%;
+        grid-row-gap: 1em;
+        grid-column-gap: $gap;
+        justify-content: center;
+        padding: 0.5em 0 0 0;
+    }
+    .form__container-small {
+        padding: 0;
+    }
+    .form {
+        grid-template-rows: min-content 0.65fr;
+    }
+    .form__button {
+        grid-area: c;
+        &::before {
+            left: 65%;
+            top: 34%;
+        }
+    }
+    .form__section-1 {
+        grid-area: a;
+    }
+    .form__section-2 {
+        grid-area: b;
+    }
+    .card__section_1 {
+        min-height: 175px;
+        padding: 0 1em 0 1em;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        &::after {
+            content: url(../img/product_mobileLD.png) !important;
+            left: 55%;
+            top: 65%;
+        }
+        &::before {
+            content: url(../img/Group_mobileLD.png) !important;
+        }
+    }
+    .card__text {
+        font-size: 18px;
+        position: static;
+    }
+    .card__text-top {
+        text-align: start;
+    }
+    .card__text-btm {
+        text-align: end;
+    }
+    .card__section_2 {
+        padding: 0 0.25em;
+    }
+    .input__region {
+        &::before {
+            left: 77%;
+        }
+        &::after {
+            left: 54%;
+        }
+    }
+}
+
+@media (min-height: 420px) and (max-height: 768px) {
+    .card {
+        height: 100vh;
+        min-height: auto;
+    }
+    .card__section_1 {
+        min-height: 180px;
+        padding: 1em 1em 0 1em;
+        &::after {
+            content: url(../img/product_mobileLD.png) !important;
+        }
+    }
+    .card__text-top {
+        top: 2.7rem;
+    }
+    .form__title {
+        padding: 0.75em 0;
+        max-width: 100%;
+        font-size: 20px;
+    }
+    .form__container {
+        grid-row-gap: 0.65em;
+        padding: 0.5em 0;
     }
 }
