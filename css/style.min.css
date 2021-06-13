@@ -814,7 +814,6 @@ input, .input__region, .form .btn--form {
 
 @media (max-width: 320px) {
   .card {
-    padding: 0 0.25em;
     height: 100vh;
     -ms-grid-rows: auto auto -webkit-min-content;
     -ms-grid-rows: auto auto min-content;
