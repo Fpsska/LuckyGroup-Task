@@ -50,13 +50,16 @@
 //         padding: 3em 1em 0 1em;
 //     }
 // }
-@media (min-height: 600px) and (max-height: 768px) {
+
+// (min-height: 600px) and (max-height: 768px)
+@media (min-height: 420px) and (max-height: 768px) {
     .card {
         height: 100vh;
         min-height: auto;
     }
     .card__section_1 {
         min-height: 250px;
+        padding: 3em 1em 0 1em;
     }
     .card__text-top {
         top: 2.7rem;
@@ -64,9 +67,6 @@
     .form__title {
         padding: 0.75em 0;
         max-width: 100%;
-    }
-    .card__section_1 {
-        padding: 3em 1em 0 1em;
     }
     .form__container {
         grid-row-gap: 1.5em;
@@ -148,9 +148,6 @@
             left: 2.8rem;
         }
     }
-    // .input__tel {
-    //     max-width: 120px;
-    // }
 }
 
 @media (min-height: 360px) and (max-height: 414px) {
@@ -227,9 +224,6 @@
             left: 3rem;
         }
     }
-    // .input__tel {
-    //     max-width: 100% !important;
-    // }
 }
 
 @media (max-width: 460px) {

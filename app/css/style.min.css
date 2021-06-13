@@ -741,13 +741,14 @@ input, .input__region, .form .btn--form {
   }
 }
 
-@media (min-height: 600px) and (max-height: 768px) {
+@media (min-height: 420px) and (max-height: 768px) {
   .card {
     height: 100vh;
     min-height: auto;
   }
   .card__section_1 {
     min-height: 250px;
+    padding: 3em 1em 0 1em;
   }
   .card__text-top {
     top: 2.7rem;
@@ -755,9 +756,6 @@ input, .input__region, .form .btn--form {
   .form__title {
     padding: 0.75em 0;
     max-width: 100%;
-  }
-  .card__section_1 {
-    padding: 3em 1em 0 1em;
   }
   .form__container {
     grid-row-gap: 1.5em;
