@@ -1,11 +1,16 @@
 @media (max-width: 1024px) {
     .card {
         grid-template-columns: 1fr;
-        height: 100vh;
+        grid-template-rows: 0.75fr 1fr;
+        // height: 100vh;
+        height: 100%;
+    }
+    .container {
+        height: 100%;
     }
     .card__section_1 {
-        min-height: 330px;
-        padding: 1em 1em 0 1em;
+        // min-height: 330px;
+        padding: 2em 2em 0 2em;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         align-items: flex-start;
@@ -30,23 +35,33 @@
     .card__text-btm {
         text-align: end;
     }
+    .form {
+        height: 100%;
+        grid-template-rows: 0.2fr 1fr;
+    }
     .form__title {
         padding: 1em 0 1em 0;
     }
     .form__container {
-        margin: 0 auto;
-        padding: 2em 0;
-        grid-row-gap: 2.2em;
+        margin: auto;
+        // padding: 2em 0;
+        padding: 0;
+        grid-row-gap: 2.25em;
+        align-items: center;
+
+        grid-template-rows: repeat(3, min-content);
     }
 }
 
 @media only screen and (min-width: 321px) and (max-width: 480px) {
     .card {
-        height: 100vh;
-        grid-template-rows: auto auto min-content;
+        // height: 100vh;
+        height: 100%;
+        // grid-template-rows: auto auto min-content;
+        grid-template-rows: 1fr 1fr;
     }
     .card__section_1 {
-        min-height: 250px;
+        // min-height: 250px;
         padding: 1.5em 1.2em 0 1.2em;
         background: $secondary;
         &::after {
@@ -60,7 +75,7 @@
         }
     }
     .card__section_2 {
-        padding-bottom: 2em;
+        padding-bottom: 1.5em;
     }
     .card__section_3 {
         display: block;
@@ -90,7 +105,7 @@
     }
     .form__container {
         padding: 0;
-        grid-row-gap: 0.25em;
+        grid-row-gap: 1.25em;
     }
     .form__container-small {
         background-color: $secondary;
@@ -99,12 +114,14 @@
 
 @media (max-width: 320px) {
     .card {
-        height: 100vh;
-        grid-template-rows: auto auto min-content;
+        // height: 100vh;
+        height: 100%;
+        grid-template-rows: 0.75fr 1fr;
+        // grid-template-rows: auto auto min-content;
     }
     .card__section_1 {
         padding: 1em 0.5em 0 0.5em;
-        min-height: 230px;
+        // min-height: 230px;
         background: $secondary;
         &::after {
             top: 55%;
@@ -163,11 +180,13 @@
 
 @media (min-height: 321px) and (max-height: 480px) {
     .card {
-        height: 100vh ; 
+        // height: 100vh;
+        height: 100%;
         min-height: auto;
+        grid-template-rows: 1fr 1.2fr;
     }
     .card__section_1 {
-        min-height: 130px;
+        // min-height: 130px;
         padding: 0.5em 1em 0 1em;
         background-color: $primary;
         background: linear-gradient(185deg, #428a60 0%, #2d8552 100%);
@@ -226,14 +245,14 @@
     }
 }
 
-
 @media (max-height: 320px) {
     .card {
-        height: 100vh;
+        height: 100%;
         min-height: auto;
+        grid-template-rows: 1fr 1.5fr;
     }
     .card__section_1 {
-        min-height: 130px;
+        // min-height: 130px;
         padding: 0.5em 1em 0 1em;
         background-color: $primary;
         background: linear-gradient(185deg, #428a60 0%, #2d8552 100%);
