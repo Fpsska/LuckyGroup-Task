@@ -403,6 +403,10 @@ select {
   cursor: pointer;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   margin: 0;
   font-size: 16px;
@@ -698,6 +702,9 @@ input, .input__region, .form .btn--form {
 }
 
 @media (max-width: 1024px) {
+  body {
+    height: 100%;
+  }
   .card {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
@@ -765,6 +772,9 @@ input, .input__region, .form .btn--form {
 }
 
 @media only screen and (min-width: 321px) and (max-width: 480px) {
+  body {
+    height: 100%;
+  }
   .card {
     height: 100%;
     -ms-grid-rows: 1fr 1fr;
@@ -826,6 +836,9 @@ input, .input__region, .form .btn--form {
 }
 
 @media (max-width: 320px) {
+  body {
+    height: 100%;
+  }
   .card {
     height: 100%;
     -ms-grid-rows: 0.75fr 1fr;
@@ -891,6 +904,9 @@ input, .input__region, .form .btn--form {
 }
 
 @media (min-height: 321px) and (max-height: 480px) {
+  body {
+    height: 100%;
+  }
   .card {
     height: 100%;
     min-height: auto;
@@ -964,6 +980,9 @@ input, .input__region, .form .btn--form {
 }
 
 @media (max-height: 320px) {
+  body {
+    height: 100%;
+  }
   .card {
     height: 100%;
     min-height: auto;
