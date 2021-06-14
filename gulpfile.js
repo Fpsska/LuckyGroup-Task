@@ -38,6 +38,7 @@ function images() {
 
 function scripts() {
     return src([
+        "node_modules/inputmask/dist/inputmask.js",
         "app/js/main.js"
     ])
         .pipe(concat("main.min.js")) // конкатенация + единое название 
