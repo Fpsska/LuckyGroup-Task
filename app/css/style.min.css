@@ -349,23 +349,23 @@ template {
 }
 
 ::-webkit-input-placeholder {
-  opacity: 0.4;
+  opacity: 0.45;
 }
 
 ::-moz-placeholder {
-  opacity: 0.4;
+  opacity: 0.45;
 }
 
 :-ms-input-placeholder {
-  opacity: 0.4;
+  opacity: 0.45;
 }
 
 ::-ms-input-placeholder {
-  opacity: 0.4;
+  opacity: 0.45;
 }
 
 ::placeholder {
-  opacity: 0.4;
+  opacity: 0.45;
 }
 
 input[type="text"],
@@ -458,6 +458,7 @@ input {
   outline: none;
   border: 1px solid #e4e4e4 !important;
   background-color: #f8f8f8 !important;
+  opacity: .6;
 }
 
 input:focus {
