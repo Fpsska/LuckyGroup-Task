@@ -4,29 +4,17 @@
 
 .card {
     min-height: 500px;
-    background-color: $secondary;
     box-shadow: 10px 3px 29px 5px rgba(34, 60, 80, 0.2);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    background: linear-gradient(180deg, #428A60 0%, #35734F 100%);
     &__section_1 {
-        background-color: $primary;
-        background: linear-gradient(185deg, #428a60 0%, #2d8552 100%);
-        position: relative;
+        background-image: url(../img/full_group.png);
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: auto;
         overflow: hidden;
-        &::before {
-            content: url(../img/Group.png);
-            position: absolute;
-            top: -15%;
-            left: 1%;
-            z-index: 1;
-        }
-        &::after {
-            content: url(../img/product.png);
-            position: absolute;
-            top: 43%;
-            left: 8%;
-            z-index: 1;
-        }
+        position: relative;
     }
     &__section_3 {
         display: none;
@@ -121,6 +109,5 @@
         border-radius: 0.3em;
     }
 }
-
 
 @import "media";
