@@ -1,11 +1,11 @@
 @media (max-width: 1024px) {
     .container {
-        height: 100% !important;
+        height: 100%;
     }
     .card {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, 1fr) !important;
-        height: 100% !important;
+        grid-template-rows: repeat(2, 1fr);
+        height: 100%;
     }
     .card__section_1 {
         padding: 2em 2em 0 2em;
@@ -13,7 +13,6 @@
         grid-template-columns: repeat(2, 1fr);
         align-items: flex-start;
         background-position: center;
-        background-size: 100%;
     }
     .card__text {
         font-size: 18px;
@@ -27,7 +26,7 @@
     }
     .form {
         height: 100%;
-        grid-template-rows: 0.2fr 1fr;
+        grid-template-rows: 0.37fr 1fr;
         grid-row-gap: 0.25em;
     }
     .form__button {
@@ -38,7 +37,6 @@
     }
     .form__container {
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto;
         align-items: center;
         grid-template-areas:
             "a b"
@@ -49,24 +47,35 @@
         padding: 0.5em 0.25em 0 0.25em;
         margin: 0;
     }
-    .form__section-3 {
-        grid-template-columns: repeat(auto-fit, minmax(100px, auto));
-    }
     .input__region {
-        margin: 0;
+        margin: 0 0 0 auto;
     }
 }
 
 @media (max-width: 1024px) and (min-height: 768px) {
     .card__section_1 {
-        background-image: url(../img/full_group-medium.png) !important;
+        background-image: url(../img/full_group-medium.png);
         background-size: auto;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) and (min-height: 1366px) {
+    .card__section_1 {
+        background-image: url(../img/full_group.png);
+        background-size: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    .card__section_1 {
+        background-image: url(../img/full_group-medium.png);
+        background-position: center;
+    }
+}
+
+@media (max-width: 767px) {
     .container {
-        padding-bottom: .25em;
+        padding-bottom: 0.25em;
     }
     .card__section_1 {
         padding: 0.5em 1em 0 1em;
@@ -115,8 +124,7 @@
     }
 }
 
-
-@media (max-width: 480px) {
+@media (max-width: 575px) {
     .container {
         padding: 0;
     }
@@ -124,12 +132,18 @@
         height: 100%;
         grid-template-rows: 0.75fr 1fr;
         background: $secondary;
+        grid-template-areas:
+            "a"
+            "b"
+            "c";
     }
     .card__section_1 {
+        grid-area: a;
         padding: 1em 0.5em 0 0.5em;
         background-image: url(../img/product_mobile.png) !important;
     }
     .card__section_2 {
+        grid-area: b;
         padding: 0 0.5em 0.5em 0.5em;
     }
     .card__text {
@@ -144,6 +158,7 @@
         text-align: end;
     }
     .card__section_3 {
+        grid-area: c;
         display: block;
         background-color: #f8f8f8;
     }
@@ -175,14 +190,14 @@
     }
 }
 
-@media (max-width: 823px) and (orientation: landscape)  {
+@media (orientation: landscape) and (max-width: 992px) {
     .container {
         padding-bottom: 0;
     }
     .card {
         height: 100%;
         min-height: auto;
-        grid-template-rows: 1fr 1.2fr;
+        grid-template-rows: 1fr 1fr;
     }
     .card__section_1 {
         padding: 0.5em 1em 0 1em;
@@ -211,7 +226,7 @@
         padding: 0.5em 0.25em 0 0.25em;
     }
     .form__button {
-        margin-bottom: .25em;
+        margin-bottom: 0.25em;
         grid-area: c;
         &::before {
             left: 65%;
@@ -231,6 +246,37 @@
         }
         &::after {
             left: 55%;
+        }
+    }
+}
+
+@media (orientation: landscape) and (max-height: 320px) {
+    .card {
+        grid-template-rows: 1fr 1fr;
+    }
+    .card__section_1 {
+        background-image: url(../img/product_nano.png) !important;
+        background-size: auto;
+        background-color: $primary;
+    }
+    .card__section_3 {
+        display: none;
+    }
+    .card__container--small {
+        padding: 0.25em 0;
+    }
+    .form__container {
+        grid-row-gap: 0.5em;
+    }
+    .card__text {
+        color: $secondary;
+    }
+    .input__region {
+        &::after {
+            display: none;
+        }
+        &::before {
+            left: 73%;
         }
     }
 }
